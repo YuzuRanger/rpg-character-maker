@@ -12,6 +12,14 @@ const characterSchema = new mongoose.Schema({
     race: {
         type: String,
         required: true
+    },
+    background: {
+        type: String,
+        required: true
+    },
+    quirk: {
+        type: String,
+        required: true
     }
 
 });
