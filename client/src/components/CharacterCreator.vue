@@ -9,6 +9,12 @@
           <option value="Thief">Thief</option>
           <option value="Warrior">Warrior</option>
       </select><br /><br />
+      <label for="races-list">Character Race: </label>
+      <select id="races-list" v-model="race">
+          <option value="Elf">Elf</option>
+          <option value="Human">Human</option>
+          <option value="Dwarf">Dwarf</option>
+      </select><br /><br />
       <button v-on:click="postCharacter">Create Character</button>
   </div>
 </template>
@@ -21,7 +27,8 @@
       data: function () {
           return {
               name: null,
-              profession: null
+              profession: null,
+              race: null
           }
       },
       methods: {
@@ -29,7 +36,8 @@
               axios
                   .post('http://localhost:3000/characters', {
                       name: this.name,
-                      profession: this.profession
+                      profession: this.profession,
+                      race: this.race
                   });
               this.showAlert();
           },

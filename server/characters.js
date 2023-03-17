@@ -14,7 +14,8 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
     const character = new Character({
         name: req.body.name,
-        profession: req.body.profession
+        profession: req.body.profession,
+        race: req.body.race
     });
     try {
         const newCharacter = await character.save();

@@ -8,7 +8,12 @@ const characterSchema = new mongoose.Schema({
     profession: {
         type: String,
         required: true
+    },
+    race: {
+        type: String,
+        required: true
     }
+
 });
 
 module.exports = mongoose.model('Character', characterSchema);
