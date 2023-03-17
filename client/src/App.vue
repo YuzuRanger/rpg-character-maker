@@ -19,7 +19,7 @@
       },
       data: function () {
           return {
-              toggle: "character-viewer",
+              toggle: "character-creator",
               characters: null
           }
       },
