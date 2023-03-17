@@ -13,3 +13,5 @@ tab two - http://localhost:3000/
 tab three
 1. cd C:\Users\Morgan\Documents\GitHub\rpg-character-maker
 2. mongod
+
+got some stylings from https://www.muicss.com/docs/v1/css-js/buttons
