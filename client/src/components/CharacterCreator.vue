@@ -31,6 +31,10 @@
                       name: this.name,
                       profession: this.profession
                   });
+              this.showAlert();
+          },
+          showAlert: () => {
+            alert('Submitted')
           }
       }
   }
