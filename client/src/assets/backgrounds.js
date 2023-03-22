@@ -1,0 +1,100 @@
+module.exports = [{
+    "name": "Acolyte",
+    "code": "Acolyte"
+}, {
+    "name": "Acrobat",
+    "code": "Acrobat"
+}, {
+    "name": "Animal Whisperer",
+    "code": "AnimalWhisperer"
+}, {
+    "name": "Archaeologist",
+    "code": "Archaeologist"
+}, {
+    "name": "Artisan",
+    "code": "Artisan"
+}, {
+    "name": "Artist",
+    "code": "Artist"
+}, {
+    "name": "Astrologer",
+    "code": "Astrologer"
+}, {
+    "name": "Back-Alley Doctor",
+    "code": "BackAlleyDoctor"
+}, {
+    "name": "Bandit",
+    "code": "Bandit"
+}, {
+    "name": "Barber",
+    "code": "Barber"
+}, {
+    "name": "Barkeep",
+    "code": "Barkeep"
+}, {
+    "name": "Barrister",
+    "code": "Barrister"
+}, {
+    "name": "Bookkeeper",
+    "code": "Bookkeeper"
+}, {
+    "name": "Bounty Hunter",
+    "code": "BountyHunter"
+}, {
+    "name": "Charlatan",
+    "code": "Charlatan"
+}, {
+    "name": "Cook",
+    "code": "Cook"
+}, {
+    "name": "Courier",
+    "code": "Courier"
+}, {
+    "name": "Criminal",
+    "code": "Criminal"
+}, {
+    "name": "Cultist",
+    "code": "Cultist"
+}, {
+    "name": "Deckhand",
+    "code": "Deckhand"
+}, {
+    "name": "Deputy",
+    "code": "Deputy"
+}, {
+    "name": "Detective",
+    "code": "Detective"
+}, {
+    "name": "Emissary",
+    "code": "Emissary"
+}, {
+    "name": "Entertainer",
+    "code": "Entertainer"
+}, {
+    "name": "False Medium",
+    "code": "FalseMedium"
+}, {
+    "name": "Farmhand",
+    "code": "Farmhand"
+}, {
+    "name": "Field Medic",
+    "code": "FieldMedic"
+}, {
+    "name": "Fortune Teller",
+    "code": "FortuneTeller"
+}, {
+    "name": "Gambler",
+    "code": "Gambler"
+}, {
+    "name": "Gladiator",
+    "code": "Gladiator"
+}, {
+    "name": "Grave Robber",
+    "code": "GraveRobber"
+}, {
+    "name": "Guard",
+    "code": "Guard"
+}, {
+    "name": "Herbalist",
+    "code": "Herbalist"
+}];

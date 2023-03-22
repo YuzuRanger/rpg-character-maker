@@ -1,0 +1,61 @@
+module.exports = [{
+    "name": "Alchemist",
+    "code": "Alchemist"
+}, {
+    "name": "Barbarian",
+    "code": "Barbarian"
+}, {
+    "name": "Bard",
+    "code": "Bard"
+}, {
+    "name": "Champion",
+    "code": "Champion"
+}, {
+    "name": "Cleric",
+    "code": "Cleric"
+}, {
+    "name": "Druid",
+    "code": "Druid"
+}, {
+    "name": "Fighter",
+    "code": "Fighter"
+}, {
+    "name": "Investigator",
+    "code": "Investigator"
+}, {
+    "name": "Magus",
+    "code": "Magus"
+}, {
+    "name": "Monk",
+    "code": "Monk"
+}, {
+    "name": "Oracle",
+    "code": "Oracle"
+}, {
+    "name": "Psychic",
+    "code": "Psychic"
+}, {
+    "name": "Ranger",
+    "code": "Ranger"
+}, {
+    "name": "Rogue",
+    "code": "Rogue"
+}, {
+    "name": "Sorcerer",
+    "code": "Sorcerer"
+}, {
+    "name": "Summoner",
+    "code": "Summoner"
+}, {
+    "name": "Swashbuckler",
+    "code": "Swashbuckler"
+}, {
+    "name": "Thaumaturge",
+    "code": "Thaumaturge"
+}, {
+    "name": "Witch",
+    "code": "Witch"
+}, {
+    "name": "Wizard",
+    "code": "Wizard"
+}];

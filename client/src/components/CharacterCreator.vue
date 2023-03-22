@@ -4,40 +4,44 @@
       <label for="character-name">Character Name: </label>
       <input type="text" id="character-name" v-model="name" placeholder="Enter a name" /> <br /><br />
 
-      <label for="races-list">Character Race: </label>
+      <label for="race">Character Race: </label>
       <select id="races-list" v-model="race">
-          <option value="Elf">Elf</option>
-          <option value="Human">Human</option>
-          <option value="Dwarf">Dwarf</option>
+          <option :value="race.name" v-for="(race) in raceSelect" :key="race.code">{{race.name}}</option>
       </select><br /><br />
             
-      <label for="professions-list">Character Profession: </label>
+      <label for="profession">Character Class: </label>
       <select id="professions-list" v-model="profession">
-          <option value="Mage">Mage</option>
-          <option value="Thief">Thief</option>
-          <option value="Warrior">Warrior</option>
+        <option :value="profession.name" v-for="(profession) in professionSelect" :key="profession.code">{{profession.name}}</option>
       </select><br /><br />
 
-      <label for="backgrounds-list">Character Background: </label>
+      <label for="background">Character Background: </label>
       <select id="backgrounds-list" v-model="background">
-          <option value="Bandit">Bandit</option>
-          <option value="Acolyte">Acolyte</option>
-          <option value="Barkeep">Barkeep</option>
+        <option :value="background.name" v-for="(background) in backgroundSelect" :key="background.code">{{background.name}}</option>
       </select><br /><br />
 
-      <label for="quirks-list">Character Quirk: </label>
+      <label for="quirk">Character Quirk: </label>
       <select id="quirks-list" v-model="quirk">
-          <option value="Afraid of a Magical Element">Afraid of a Magical Element</option>
-          <option value="Bound to an Oath">Bound to an Oath</option>
-          <option value="Overly Flirtatious">Overly Flirtatious</option>
+        <option :value="quirk.name" v-for="(quirk) in quirkSelect" :key="quirk.code">{{quirk.name}}</option>
       </select><br /><br />
+
+      <!--<label for="country">Your Country</label>
+      <select id="countries-list" v-model="country">
+          <option :value="country.name" v-for="(country) in countryList" :key="country.code">{{country.name}}</option>
+        </select><br /><br /> -->
 
       <button v-on:click="postCharacter">Save Character</button>
+      <button @click="resetInput">Reset</button>
   </div>
 </template>
 
 <script>
   import axios from 'axios';
+
+  // let countries = require('../data/countries.js');
+  let raceList = require('../assets/races.js');
+  let professionList = require('../assets/professions.js');
+  let backgroundList = require('../assets/backgrounds.js');
+  let quirkList = require('../assets/quirks.js');
 
   export default {
       name: 'CharacterCreator',
@@ -47,7 +51,12 @@
               profession: null,
               race: null,
               background: null,
-              quirk: null
+              quirk: null,
+              raceSelect: raceList,
+              professionSelect: professionList,
+              backgroundSelect: backgroundList,
+              quirkSelect: quirkList
+              // countryList: countries,
           }
       },
       methods: {
@@ -64,6 +73,13 @@
           },
           showAlert: () => {
             alert('Submitted')
+          },
+          resetInput () {
+            this.name = "";
+            this.profession = "";
+            this.race = "";
+            this.background = "";
+            this.quirk = "";
           }
       }
   }
