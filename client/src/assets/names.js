@@ -1,0 +1,49 @@
+module.exports = [{
+    "name": "Bertio",
+    "code": "Bertio"
+}, {
+    "name": "Alard",
+    "code": "Alard"
+}, {
+    "name": "Gifu",
+    "code": "Gifu"
+}, {
+    "name": "Aethild",
+    "code": "Aethild"
+}, {
+    "name": "Ellyn",
+    "code": "Ellyn"
+}, {
+    "name": "Kathil",
+    "code": "Kathil"
+}, {
+    "name": "Thali",
+    "code": "Thali"
+}, {
+    "name": "Amin",
+    "code": "Amin"
+}, {
+    "name": "Kurda",
+    "code": "Kurda"
+}, {
+    "name": "Zuri",
+    "code": "Zuri"
+}, {
+    "name": "Galdire",
+    "code": "Galdire"
+}, {
+    "name": "Ellartan",
+    "code": "Ellartan"
+}, {
+    "name": "Nellaser",
+    "code": "Nellaser"
+}, {
+    "name": "Griffolk",
+    "code": "Griffolk"
+}, {
+    "name": "Ryne",
+    "code": "Ryne"
+}, {
+    "name": "Ulfherth",
+    "code": "Ulfherth"
+}];

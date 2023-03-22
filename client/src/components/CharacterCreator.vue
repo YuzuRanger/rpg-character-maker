@@ -29,8 +29,9 @@
           <option :value="country.name" v-for="(country) in countryList" :key="country.code">{{country.name}}</option>
         </select><br /><br /> -->
 
-      <button v-on:click="postCharacter">Save Character</button>
-      <button @click="resetInput">Reset</button>
+        <button @click="randomInput" class="randomize">Randomize All</button>
+        <button v-on:click="postCharacter">Save Character</button>
+      <button @click="resetInput" class="reset">Clear Form</button>
   </div>
 </template>
 
@@ -42,6 +43,8 @@
   let professionList = require('../assets/professions.js');
   let backgroundList = require('../assets/backgrounds.js');
   let quirkList = require('../assets/quirks.js');
+  let nameList = require('../assets/names.js');
+
 
   export default {
       name: 'CharacterCreator',
@@ -80,6 +83,23 @@
             this.race = "";
             this.background = "";
             this.quirk = "";
+          },
+          randomInput () {
+            var randomName = Math.floor(Math.random() * nameList.length);
+            this.name = nameList[randomName].name;
+
+            
+            var randomRace = Math.floor(Math.random() * raceList.length);
+            this.race = raceList[randomRace].name;
+
+            var randomProf = Math.floor(Math.random() * professionList.length);
+            this.profession = professionList[randomProf].name;
+
+            var randomBack = Math.floor(Math.random() * backgroundList.length);
+            this.background = backgroundList[randomBack].name;
+
+            var randomQuirk = Math.floor(Math.random() * quirkList.length);
+            this.quirk = quirkList[randomQuirk].name;
           }
       }
   }

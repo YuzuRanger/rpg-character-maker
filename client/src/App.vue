@@ -39,6 +39,7 @@
 <style>
 :root {
   --accent1: rgb(232, 72, 40);
+  --accent2: rgb(200, 159, 233);
 }
 
 body {
@@ -81,6 +82,14 @@ button {
     margin-left: .5rem;
 }
 
+.reset {
+    background-color: var(--accent2);
+}
+
+.randomize {
+    background-color: aquamarine;
+}
+
 button:hover {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
@@ -116,6 +125,14 @@ button:hover {
     margin-left: .5rem;
     color: #FFF;
     background-color: var(--accent1);
+}
+
+.reset:hover {
+    background-color: blueviolet;
+}
+
+.randomize:hover {
+    background-color: aqua;
 }
 
 select {
