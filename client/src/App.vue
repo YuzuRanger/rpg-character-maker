@@ -38,13 +38,15 @@
 
 <style>
 :root {
-  --accent1: rgb(232, 72, 40);
-  --accent2: rgb(200, 159, 233);
+  --accent1: #635985;
+  --accent2: #443C68;
+  --accent3: #393053;
+  --accent4: #18122B;
 }
 
 body {
   background-image: url("@/assets/background.jpg");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -87,7 +89,7 @@ button {
 }
 
 .randomize {
-    background-color: aquamarine;
+    background-color: var(--accent3);
 }
 
 button:hover {
@@ -124,15 +126,7 @@ button:hover {
     box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
     margin-left: .5rem;
     color: #FFF;
-    background-color: var(--accent1);
-}
-
-.reset:hover {
-    background-color: blueviolet;
-}
-
-.randomize:hover {
-    background-color: aqua;
+    background-color: var(--accent4);
 }
 
 select {
