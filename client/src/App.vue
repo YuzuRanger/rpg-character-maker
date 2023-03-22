@@ -46,8 +46,9 @@
 
 body {
   background-image: url("@/assets/background.jpg");
-  background-size: cover;
+  background-size: 100vw 100vh;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 button {
